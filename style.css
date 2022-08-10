@@ -1,0 +1,32 @@
+html{
+    overflow-x: scroll;
+}
+
+body{
+}
+
+.container{  
+    display: inline-grid;
+
+
+width: 500px;
+height: 500px;
+background-color: aqua;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+/*
+.gridPart{
+    
+width: 10px;
+height: 10px;
+ 
+}
+*/
+.container div:nth-child(odd){
+background-color: red;
+}
+
+.container div:nth-child(even){
+    background-color: blue;
+    }
