@@ -4,8 +4,17 @@ const slider = document.querySelector(".grod");
 const slideOut = document.querySelector(".output");
 const reset = document.querySelector(".reset");
 
+
 slideOut.innerHTML = slider.value;
 
+
+/*
+function updateOutput(){
+    comsole.log(slider.value);
+slideOut.innerHTML = slider.value;
+
+}
+*/
 /*
 reset.addEventListener("click", resetBoard);
 
@@ -57,6 +66,7 @@ function makeGrid(num) {
 }
 
 function changeSize(input) {
+    slideOut.innerHTML = slider.value;
     makeGrid(input);
 }
 /*

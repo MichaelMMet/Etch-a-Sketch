@@ -13,8 +13,9 @@
     </header>
     <div class="app">
         <div class="slideContainer">
+            <!--  the onchange is what calls the function to update the grid size-->
             <div class="gridSlide"> <input class="grod" type="range" min="16" max="100" value="50" class="slider"
-                    onchange="changeSize(this.value)" id="myRange"></div>
+                    onchange="changeSize(this.value)"  id="myRange"></div>
         </div>
         <div class="output"></div>
         <button class="reset" onclick="resetBoard()">Reset Board</button>
