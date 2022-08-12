@@ -1,91 +1,79 @@
-/*
-html{
-    overflow-x: scroll;
+.container {
+  display: grid;
+
+
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(16, 1fr);
 }
 
-body{
-}
-*/
-
-.container{  
-display: grid;
 
 
-width: 500px;
-height: 500px;
-    grid-template-columns: repeat(16, 1fr);
+.container div:nth-child(odd) {
+  background-color: red;
 }
 
-/*
+.container div:nth-child(even) {
+  background-color: blue;
+}
+
 .gridPart{
-    
-width: 10px;
-height: 10px;
- 
-}
-*/
-
-/*
-.gridPart:hover {
-background-color: black;
-
-}
-*/
-
-.gridBlack{
-  background-color: black;
+background-color: white;
 }
 
-/*
-.container div:nth(odd):hover {
-    background-color: black;
-
-}
-*/
-
-.container div:nth-child(odd){
-background-color: red;
-}
-
-.container div:nth-child(even){
-    background-color: blue;
-    }S
-    
-/*
     .slideContainer {
-        width: 100%; /* Width of the outside container */
-      }
-      
-      /* The slider itself */
-      .grod {
-        -webkit-appearance: none;  /* Override default CSS styles */
-        appearance: none;
-        width: 100%; /* Full-width */
-        height: 25px; /* Specified height */
-        background: #d3d3d3; /* Grey background */
-        outline: none; /* Remove outline */
-        opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-        transition: opacity .2s;
-      }
-      
-      /* Mouse-over effects */
-      .gridSlider:hover {
-        opacity: 1; /* Fully shown on mouse-over */
-      }
-      
-      /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-      .gridSlider::-webkit-slider-thumb {
-        -webkit-appearance: none; /* Override default look */
-        appearance: none;
-        width: 25px; /* Set a specific slider handle width */
-        height: 25px; /* Slider handle height */
-        background: #04AA6D; /* Green background */
-        cursor: pointer; /* Cursor on hover */
-      }
-      
-      .gridSlider::-moz-range-thumb {
-        width: 25px; /* Set a specific slider handle width */
-        height: 25px; /* Slider handle height */
-        background: #04AA6D; /* Green background */
-        cursor: pointer; /* Cursor on hover */
+        width: 100%; /* Width of the outside container 
+}
+
+
+/* The slider itself */
+.grod {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 25px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.gridSlider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.gridSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #04AA6D;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.gridSlider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #04AA6D;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
