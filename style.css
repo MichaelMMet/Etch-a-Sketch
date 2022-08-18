@@ -1,8 +1,15 @@
 body{
   font-family: 'Oswald', sans-serif;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
+.output{
+width: 100px;
+height: 100px;
+
+}
 header{
   display: flex;
   justify-content: center;
