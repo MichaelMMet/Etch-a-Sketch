@@ -5,21 +5,7 @@ const reset = document.querySelector(".reset");
 
 slideOut.innerHTML = slider.value;
 
-/*
-reset.addEventListener("click", resetBoard);
-function resetBoard(){
-let allDivs = container.querySelectorAll("div");
-allDivs.forEach((div) => allDivs.style.backgroundColor="black");
-}
-*/
 
-/*
-slider.oninput = function () {
-    slideOut.innerHTML = this.value;
-    let value = this.value;
-    console.log(slider.value);
-}
-*/
 
 function makeGrid(num) {
     container.style.gridTemplateColumns = `repeat(${num} , 1fr)`;
@@ -44,10 +30,7 @@ function makeGrid(num) {
             } else if (document.getElementById("white").checked) {
                 gridPart.style.backgroundColor = "white";
             }
-            //gridPart.style.backgroundColor = `rgb(${Math.floor(Math.random * 255)},${Math.floor(Math.random * 255)},${Math.floor(Math.random * 255)}) `;
-            //gridPart.style.backgroundColor = `rgb(${r()}, ${r()}, ${r()})`;
-            // gridPart.style.backgroundColor = "black";
-
+           
         });
         gridPart.style.backgroundColor = "white"
         container.appendChild(gridPart);
@@ -58,19 +41,7 @@ function changeSize(input) {
     slideOut.innerHTML = "Board Size: " +slider.value;
     makeGrid(input);
 }
-/*
-function colorSquares(){
-    let gridPart = document.querySelectorAll(".gridPart");
-    if (document.getElementById("black").checked) {
-        gridPart.style.backgroundColor = "black";
-    } else if (document.getElementById("random").checked) {
-        let r = () => Math.random() * 256 >> 0;
-        gridPart.style.backgroundColor = `rgb(${r()}, ${r()}, ${r()})`;
-    } else if (document.getElementById("white").checked) {
-        gridPart.style.backgroundColor = "white";
-    }
-}
-*/
+
 
 function resetBoard(){
     let board = document.querySelector(".container");
